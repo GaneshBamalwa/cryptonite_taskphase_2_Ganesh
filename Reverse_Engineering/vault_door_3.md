@@ -2,8 +2,8 @@
 
 ## Table of Content
 
-- commands-executed:   
-- flag : 
+- commands-executed:   simple reverse engineering
+- flag : picoctf{jU5t_a_s1mpl3_an4gr4m_4_u_79958f}
 
 
 ### Chain of thought / Learning:
@@ -100,52 +100,58 @@ Enter 32 bit stringABCDEFGHIJKLMNOPQRSTUVWXYZ123456
 Output:
 ABCDEFGHPONMLKJI5R3T1VYXWZU2S4Q6
 ```
-Characters 1-8 (ABCDEFGH) remain unchanged in both strings.
-Characters 9-16 (IJKLMNOP) are reversed to PONMLKJI in the output.
-I (9) → P (9)
-J (10) → O (10)
-K (11) → N (11)
-L (12) → M (12)
-M (13) → L (13)
-N (14) → K (14)
-O (15) → J (15)
-P (16) → I (16)
-Character 17 (Q) is replaced by 5.
-Q (17) → 5 (17)
-Character 18 (R) is replaced by R.
-No change (R (18) → R (18))
-Character 19 (S) is replaced by 3.
-S (19) → 3 (19)
-Character 20 (T) is replaced by T.
-No change (T (20) → T (20))
-Character 21 (U) is replaced by 1.
-U (21) → 1 (21)
-Characters 22-26 (VWXYZ) are reversed to VYXWZ.
-V (22) → V (22)
-W (23) → Y (23)
-X (24) → X (24)
-Y (25) → W (25)
-Z (26) → Z (26)
-Character 27 (1) is replaced by U.
-1 (27) → U (27)
-Character 28 (2) is replaced by 2.
-No change (2 (28) → 2 (28))
-Character 29 (3) is replaced by S.
-3 (29) → S (29)
-Character 30 (4) is replaced by 4.
-No change (4 (30) → 4 (30))
-Character 31 (5) is replaced by Q.
-5 (31) → Q (31)
-Character 32 (6) is replaced by 6.
-No change (6 (32) → 6 (32))
+Enter 32 bit stringABCDEFGHIJKLMNOPQRSTUVWXYZ123456
+Output:
+ABCDEFGHPONMLKJI5R3T1VYXWZU2S4Q6
+
+=== Code Execution Successful ===
+
+
+jU5t_a_sna_3lpm18g947_u_4_m9r54f
+```
+1 - 8 as it is 	
+jU5t_a_s
+9-16 reversed : 
+jU5t_a_s1mpl3_an
+17 - second last character
+18 remains 18 
+jU5t_a_s1mpl3_an4g
+19  -- 29 
+20 as it is 
+jU5t_a_s1mpl3_an4gr4
+21 --- last sixth
+22 --- remains as it is. 
+jU5t_a_s1mpl3_an4gr4m_
+ 23 --- 25 
+jU5t_a_s1mpl3_an4gr4m_4
+24 --- remains 24. 
+jU5t_a_s1mpl3_an4gr4m_4_
+25 --- 23 
+jU5t_a_s1mpl3_an4gr4m_4_u
+26 -- remains as it is. 
+jU5t_a_s1mpl3_an4gr4m_4_u_
+27 -- 21
+jU5t_a_s1mpl3_an4gr4m_4_u_7
+28 -- as it is 
+jU5t_a_s1mpl3_an4gr4m_4_u_79
+29 --- 19
+jU5t_a_s1mpl3_an4gr4m_4_u_799
+30 -- as it is 
+jU5t_a_s1mpl3_an4gr4m_4_u_7995
+31 --- 17 
+jU5t_a_s1mpl3_an4gr4m_4_u_79958
+32 - same 
+jU5t_a_s1mpl3_an4gr4m_4_u_79958f
+```										
 
 - we follow these very changes and can reverse the output.
 - we know final string must be jU5t_a_sna_3lpm18g947_u_4_m9r54f
--
-jU5t_a_sna_3lpm18g947_u_4_m9r54f
+-After all the changes we get
 
-
-
-
+==picoctf{jU5t_a_s1mpl3_an4gr4m_4_u_79958f}==
  
 #### Output:
+
+Enter 32 bit stringABCDEFGHIJKLMNOPQRSTUVWXYZ123456
+Output:
+ABCDEFGHPONMLKJI5R3T1VYXWZU2S4Q6
