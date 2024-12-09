@@ -68,7 +68,7 @@ CHECKOUTTHEPHOTOS
 - the photos are 3 simple pictures of a valley or mountain but the program.deb has a steghid file. so basically they are steg images.
 - Steganography is a technique for hiding information in a way that avoids detection , in here pictures are used to hide ther flag.
 - so we use the kali steghide program to maybe try and extract the message from the steg images.
-- okay so to decode we need a passphrase and the hints clearly meantion **DUEDILIGENCE**
+- okay so to decode we need a passphrase and the hints clearly mention **DUEDILIGENCE**
 - we try it for all the images
 ```
                                                                                                                                          
