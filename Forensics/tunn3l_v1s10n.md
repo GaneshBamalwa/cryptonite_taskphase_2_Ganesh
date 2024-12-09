@@ -62,6 +62,13 @@ https://www.file-recovery.com/bmp-signature-format.html
 - all the entries are in little endian which basically means the bytes are reversed from normal form
 - second we see the bad and bad written on 10th and 14th position. I used a sample bmp working image that i downloaded from the internet
 - acc to that i set the values to 8A and 7C respectively.
+  this is the sample:
+![sample](https://github.com/user-attachments/assets/e6d32db2-6e21-4c32-b6ca-85fee30841d7)
+
+this is the image given:
+
+![11](https://github.com/user-attachments/assets/ffe9c323-3d80-42af-9a0c-da5141cc1cdc)
+
 - the image now opens up
 ![1](https://github.com/user-attachments/assets/b1582d78-84b3-4f78-8318-92b54c2799f7)
 - the image appears to be cropped out, now the way to handle this is we find the hex offset responsible for the height and width.
