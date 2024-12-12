@@ -17,4 +17,16 @@ https://www.youtube.com/watch?v=wXB-V_Keiu8
 - using this for n:
 - phi(n) = phi(p1) * phi(p2) , now p1,p2 are primes therefore :
 - phi(n) = p1-1 * p2-1
+
+
 **euler's theorem**
+
+![eulersthm](https://github.com/user-attachments/assets/cd885323-49c3-442a-8a11-bbf5437e7564)
+
+- 1 % N
+- 
+![eulersthm1](https://github.com/user-attachments/assets/6e4ce785-8259-48de-a9bc-e3d90f28bb19)
+
+-
+![eulersthm2](https://github.com/user-attachments/assets/936b09c6-657d-4baa-b6b8-573e80bd16f7)
+
